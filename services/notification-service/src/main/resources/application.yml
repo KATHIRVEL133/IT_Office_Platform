@@ -1,0 +1,9 @@
+spring:
+    application:
+          name: notification-service
+    datasource:
+            url: jdbc:mysql://localhost:3306/itoffice_db
+            username: root
+            password: root
+server:
+  port: 8084
