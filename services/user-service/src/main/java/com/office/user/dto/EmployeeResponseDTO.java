@@ -1,9 +1,10 @@
 package com.office.user.dto;
 
 import com.office.user.enums.Role;
-import lombok.*;
+import lombok.Builder;
+import lombok.Getter;
 
-@Data
+@Getter
 @Builder
 public class EmployeeResponseDTO {
 

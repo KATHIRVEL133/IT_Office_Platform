@@ -7,17 +7,17 @@ import com.office.user.entity.Employee;
 @Component
 public class EmployeeMapper {
 
-    public  Employee toEntity(EmployeeRequestDTO dto, String tenantId) {
-        return Employee.builder()
-                .firstName(dto.getFirstName())
-                .lastName(dto.getLastName())
-                .email(dto.getEmail())
-                .department(dto.getDepartment())
-                .role(dto.getRole())
-                .status(dto.getStatus())
-                .tenantId(tenantId)
-                .build();
-    }
+  public Employee toEntity(EmployeeRequestDTO dto, String tenantId) {
+    return Employee.builder()
+            .firstName(dto.getFirstName())
+            .lastName(dto.getLastName())
+            .email(dto.getEmail())
+            .department(dto.getDepartment())
+            .role(dto.getRole())
+            .tenantId(tenantId)
+            .status("ACTIVE") // ✅ set here
+            .build();
+}
 
     public  EmployeeResponseDTO toDTO(Employee emp) {
         return EmployeeResponseDTO.builder()

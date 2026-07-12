@@ -1,0 +1,6 @@
+com/office/common/exception/BusinessException.class
+com/office/common/exception/ErrorResponse$ErrorResponseBuilder.class
+com/office/common/exception/TenantNotFoundException.class
+com/office/common/exception/ResourceNotFoundException.class
+com/office/common/exception/ErrorResponse.class
+com/office/common/exception/GlobalExceptionHandler.class

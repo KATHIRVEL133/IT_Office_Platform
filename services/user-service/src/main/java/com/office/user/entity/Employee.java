@@ -1,26 +1,20 @@
 package com.office.user.entity;
 
-
 import com.office.user.enums.Role;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Table(name = "employees")
+@Table(
+    name = "employees",
+    uniqueConstraints = {
+        @UniqueConstraint(columnNames = {"email", "tenant_id"})
+    }
+)
 public class Employee {
 
     @Id
@@ -32,17 +26,18 @@ public class Employee {
 
     private String lastName;
 
-    @Column(unique = true, nullable = false)
-    private String email;
+    @Column(nullable = false)
+    private String email; // ❌ removed unique=true
 
     private String department;
 
-    @Column(nullable = false)
+    @Column(name = "tenant_id", nullable = false)
     private String tenantId;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private Role role;
 
+    @Column(nullable = false)
     private String status; // ACTIVE / INACTIVE
 }

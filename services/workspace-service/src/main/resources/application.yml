@@ -1,9 +1,17 @@
-spring:
-    application:
-          name: workspace-service
-    datasource:
-            url: jdbc:mysql://localhost:3306/itoffice_db
-            username: root
-            password: root
 server:
-  port: 8086
+  port: 8083
+
+spring:
+  application:
+    name: workspace-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/workspace_db
+    username: admin
+    password: admin
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true

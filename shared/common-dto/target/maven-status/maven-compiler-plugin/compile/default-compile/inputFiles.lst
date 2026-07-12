@@ -1,0 +1,8 @@
+/home/hp_kathirvel/projects/it-office-platform/shared/common-dto/src/main/java/com/office/common/dto/response/EmployeeResponse.java
+/home/hp_kathirvel/projects/it-office-platform/shared/common-dto/src/main/java/com/office/common/dto/event/EmployeeCreatedEvent.java
+/home/hp_kathirvel/projects/it-office-platform/shared/common-dto/src/main/java/com/office/common/dto/event/WorkspaceCreatedEvent.java
+/home/hp_kathirvel/projects/it-office-platform/shared/common-dto/src/main/java/com/office/common/dto/response/WorkspaceResponse.java
+/home/hp_kathirvel/projects/it-office-platform/shared/common-dto/src/main/java/com/office/common/dto/event/TicketCreatedEvent.java
+/home/hp_kathirvel/projects/it-office-platform/shared/common-dto/src/main/java/com/office/common/dto/request/CreateWorkspaceRequest.java
+/home/hp_kathirvel/projects/it-office-platform/shared/common-dto/src/main/java/com/office/common/dto/request/CreateEmployeeRequest.java
+/home/hp_kathirvel/projects/it-office-platform/shared/common-dto/src/main/java/com/office/common/dto/event/TenantCreatedEvent.java

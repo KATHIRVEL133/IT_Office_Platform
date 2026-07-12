@@ -1,0 +1,12 @@
+com/office/common/dto/response/EmployeeResponse.class
+com/office/common/dto/event/EmployeeCreatedEvent$EmployeeCreatedEventBuilder.class
+com/office/common/dto/event/WorkspaceCreatedEvent.class
+com/office/common/dto/response/WorkspaceResponse.class
+com/office/common/dto/event/WorkspaceCreatedEvent$WorkspaceCreatedEventBuilder.class
+com/office/common/dto/request/CreateWorkspaceRequest.class
+com/office/common/dto/request/CreateEmployeeRequest.class
+com/office/common/dto/event/TicketCreatedEvent.class
+com/office/common/dto/event/TenantCreatedEvent.class
+com/office/common/dto/event/TicketCreatedEvent$TicketCreatedEventBuilder.class
+com/office/common/dto/event/TenantCreatedEvent$TenantCreatedEventBuilder.class
+com/office/common/dto/event/EmployeeCreatedEvent.class
